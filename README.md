@@ -14,6 +14,9 @@ pip install requirements.txt
 ```
 python3 ./get_models.py
 ```
+Creates
+- logreg.joblib containing a logistic regression model
+- linreg.joblib containing a linear regression model
 
 ### Use the transpiler
 ```
