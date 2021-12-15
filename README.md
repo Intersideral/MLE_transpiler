@@ -1,4 +1,4 @@
-# Linear Regression transpiler from joblib to C
+# Linear/Logistic Regression transpiler from joblib to C
 
 ## Installation
 
@@ -10,16 +10,17 @@ pip install requirements.txt
 
 ## Usage
 
-### Generate a linear regression model for test
+### Generate a linear regression and a logistic regression model for test
 ```
-python3 ./get_model.py
+python3 ./get_models.py
 ```
 
 ### Use the transpiler
 ```
-python3 ./transpiler.py <filename>
+python3 ./transpiler.py <filename> <is_logistic>
 ```
-\<filename\> path to your .joblib file
+- \<filename\> path to your .joblib file
+- \<is_logistic\> True if the model is a logistic regression, False if the model is a linear regression
 
 ### Compile the model
 ```
